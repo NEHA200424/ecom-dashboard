@@ -11,6 +11,12 @@
       "static/chunks/_pages-dir-browser_node_modules_next_dist_pages__error_js.js"
     ]
   },
+  "pages\\analytics.js -> ../components/LeafletMap": {
+    "id": "pages\\analytics.js -> ../components/LeafletMap",
+    "files": [
+      "static/chunks/_pages-dir-browser_src_components_LeafletMap_js.js"
+    ]
+  },
   "pages\\index.js -> ../components/charts/AnalyticsChart": {
     "id": "pages\\index.js -> ../components/charts/AnalyticsChart",
     "files": [

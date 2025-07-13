@@ -12,6 +12,8 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@fontsource/poppins": "^5.2.6",
+    "@fontsource/roboto-mono": "^5.2.6",
     "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.18.0",
     "@mui/styled-engine": "^7.2.0",
@@ -19,15 +21,20 @@
     "@mui/system": "^7.2.0",
     "axios": "^1.10.0",
     "chart.js": "^4.4.0",
+    "chartjs-chart-geo": "^4.3.4",
     "date-fns": "^2.30.0",
+    "leaflet": "^1.9.4",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
     "next": "^15.3.5",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
     "react-redux": "^8.1.3",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.1.19",
+    "topojson-client": "^3.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",

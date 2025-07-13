@@ -1,5 +1,13 @@
 import React from 'react';
-import { Box, List, ListItemButton, ListItemIcon, ListItemText, Divider } from '@mui/material';
+import { useRouter } from 'next/router';
+import {
+  Box,
+  List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
+  Divider
+} from '@mui/material';
 import {
   Dashboard as DashboardIcon,
   Analytics as AnalyticsIcon,
@@ -12,15 +20,17 @@ import {
 } from '@mui/icons-material';
 
 const Sidebar = () => {
+  const router = useRouter();
+
   const menuItems = [
-    { text: 'Dashboard', icon: <DashboardIcon />, active: true },
-    { text: 'Analytics', icon: <AnalyticsIcon />, active: false },
-    { text: 'My Wallet', icon: <WalletIcon />, active: false },
-    { text: 'Account', icon: <AccountIcon />, active: false },
-    { text: 'Settings', icon: <SettingsIcon />, active: false },
-    { text: 'Security', icon: <SecurityIcon />, active: false },
-    { text: 'Help Center', icon: <HelpIcon />, active: false },
-    { text: 'Dark Mode', icon: <DarkModeIcon />, active: false },
+    { text: 'Dashboard', icon: <DashboardIcon />, path: '/' },
+    { text: 'Analytics', icon: <AnalyticsIcon />, path: '/analytics' },
+    { text: 'My Wallet', icon: <WalletIcon />, path: '/wallet' },
+    { text: 'Account', icon: <AccountIcon />, path: '/account' },
+    { text: 'Settings', icon: <SettingsIcon />, path: '/settings' },
+    { text: 'Security', icon: <SecurityIcon />, path: '/security' },
+    { text: 'Help Center', icon: <HelpIcon />, path: '/help' },
+    { text: 'Dark Mode', icon: <DarkModeIcon />, path: '/dark-mode' },
   ];
 
   return (
@@ -34,16 +44,20 @@ const Sidebar = () => {
         flexDirection: 'column'
       }}
     >
-      <Box sx={{ py: 3, textAlign: 'center', fontSize: 24, fontWeight: 'bold' }}>
+      <Box sx={{ py: 3, textAlign: 'center', fontSize: 22, fontWeight: 'bold' }}>
         Finance Dashboard
       </Box>
       <Divider sx={{ bgcolor: '#333' }} />
       <List>
-        {menuItems.map(({ text, icon, active }, idx) => (
+        {menuItems.map(({ text, icon, path }) => (
           <ListItemButton
-            key={idx}
-            selected={active}
-            sx={{ bgcolor: active ? '#2D2D42' : 'inherit', color: 'inherit' }}
+            key={text}
+            selected={router.pathname === path}
+            onClick={() => router.push(path)}
+            sx={{
+              bgcolor: router.pathname === path ? '#2D2D42' : 'inherit',
+              color: 'inherit'
+            }}
           >
             <ListItemIcon sx={{ color: 'inherit' }}>{icon}</ListItemIcon>
             <ListItemText primary={text} />
@@ -55,3 +69,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
