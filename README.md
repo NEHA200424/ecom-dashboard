@@ -1,6 +1,9 @@
 # 🛍️ Ecom Dashboard
 
-🚀 Live Demo: [ecom-dashboard.vercel.app](https://ecom-dashboard-caouuzr5c-nehas-projects-7f5eba01.vercel.app)
+
+## 🚀 Live Demo
+
+🔗 [Click to Visit Live Dashboard](https://ecom-dashboard-39f1aaat0-nehas-projects-7f5eba01.vercel.app)
 
 ## 📌 Project Overview
 
@@ -10,24 +13,25 @@ This dashboard was built as a front-end UI prototype for showcasing key e-commer
 
 ---
 
-## ✨ Features
+## 📂 Features
 
-- 📊 **Sales Analytics Chart** (Amazon, Myntra, Flipkart)
-- 💳 **Finance Cards**: Credit Cards, Purchases, Bank Accounts, Savings
-- 💡 **Dark/Light Mode Toggle**
-- 🔢 **Formatted Indian Numbering System**
-- 📱 Fully Responsive UI
-- ⚡ Fast loading with optimized design
+- 📊 Dynamic Sales Analytics (Bar, Line, Doughnut Charts)
+- 🗺️ Region-wise Sales with Interactive Leaflet Map
+- 💰 Wallet Overview
+- 👤 Account & Settings Pages
+- 🌗 Dark Mode Toggle
+- 📱 Responsive UI
+- 🧠 Built with Next.js, MUI, Chart.js, Leaflet
 
 ---
+## 📦 Tech Stack
 
-## 🛠️ Tech Stack
-
-- **React.js** (Next.js)
-- **Material UI (MUI)** – for theme and layout
-- **Chart.js** – line charts
-- **Axios** – API calls
-- **Vercel** – deployment
+- **Frontend**: Next.js, React
+- **UI Library**: Material UI (MUI)
+- **Charts**: Chart.js via `react-chartjs-2`
+- **Maps**: Leaflet + GeoJSON
+- **Styling**: MUI SX + Global CSS
+- **Hosting**: Vercel
 
 ---
 
