@@ -9,8 +9,7 @@
 
 Ecom Dashboard is a beautifully designed, responsive, and dark/light mode enabled analytics dashboard that visualizes data from popular e-commerce platforms like **Amazon**, **Myntra**, and **Flipkart**.
 
-This dashboard was built as a front-end UI prototype for showcasing key e-commerce metrics in a visually appealing way — perfect for college project exhibitions or product showcase demos.
-
+This dashboard was built as a front-end UI prototype for showcasing key e-commerce metrics in a visually appealing way
 ---
 
 ## 📂 Features
